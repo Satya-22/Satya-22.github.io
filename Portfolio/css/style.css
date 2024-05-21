@@ -367,17 +367,46 @@ span {
   font-size: 1.2rem;  /* Adjust icon size */
   color: #070000;        /* Set icon color */
 }
-.skills-list li img {
-  width: 50px; /* Adjust width as needed */
-  height: 50px; /* Adjust height as needed */
-  margin: 0.5rem; 
-  text-align: center;
-}
 
 .contact form .input-box input {
     width: 49%;
 }
 
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline-item {
+  display: inline-block;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+.skills-list li {
+    margin: 0.5rem; /* Add some space between skills */
+}
+
+.skills-list li img{
+    width: 50px;
+    height: 50px;
+}
 .contact form textarea {
     resize: none;
 }
