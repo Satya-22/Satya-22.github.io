@@ -320,6 +320,11 @@ span {
     margin-bottom: 3rem;
 }
 
+.details h2 {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+}
+
 .contact form {
     max-width: 70rem;
     margin: 1rem auto;
