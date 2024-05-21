@@ -474,6 +474,20 @@ span {
     .about {
         flex-direction: column-reverse;
     }
+    .contact .details p {
+    font-size: 1.5em; /* Adjust the size to match the heading */
+    margin: 10px 0;
+    }
+
+    .contact .details a {
+    color: #0073b1; /* LinkedIn blue color for links */
+    text-decoration: none;
+    }
+
+    .contact .details a:hover {
+    text-decoration: underline;
+}
+
 
     .about-img {
         width: 70vw;
