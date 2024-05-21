@@ -15,7 +15,8 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #ffe720;
+    /* --main-color: #ffe720; */
+    --main-color: #0000FF;
 }
 
 html {
