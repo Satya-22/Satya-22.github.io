@@ -400,12 +400,12 @@ img {
   }
 
 .skills-list li {
-    margin: 0.5rem; /* Add some space between skills */
+    margin: 1rem; /* Add some space between skills */
 }
 
 .skills-list li img{
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
 }
 .contact form textarea {
     resize: none;
