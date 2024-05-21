@@ -364,6 +364,7 @@ span {
 .contact .details p {
     font-size: 1.6em; /* Adjust the size to match the heading */
     margin: 10px 0;
+    margin-bottom: 15px;
 }
 
 .contact .details a {
