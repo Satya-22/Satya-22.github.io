@@ -74,3 +74,7 @@ const typed = new Typed(".multiple-text", {
   backDelay: 1000,
   loop: true,
 });
+
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
