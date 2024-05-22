@@ -411,6 +411,9 @@ img {
     resize: none;
 }
 
+.home-img {
+    margin-left: 20px;
+}
 .home-img-overlay {
   position: absolute;
   top: 0;
