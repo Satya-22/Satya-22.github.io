@@ -368,6 +368,10 @@ span {
   color: #070000;        /* Set icon color */
 }
 
+.skill-categories{
+    padding-top: 30px;
+}
+
 .contact form .input-box input {
     width: 49%;
 }
@@ -409,6 +413,11 @@ img {
 }
 .contact form textarea {
     resize: none;
+}
+
+.portfolio-image-container {
+    background-color: white;
+    padding: 5px; 
 }
 
 .home-img {
