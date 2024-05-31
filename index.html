@@ -81,21 +81,13 @@
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>RPA Developer</h3>
-            <p>Hi, I'm Satya, a passionate learner and Computer Science major at Depaul University. As someone who
-                is fascinated by the intersection of technology and innovation, I'm particularly interested in the
-                fields of RPA, Artificial Intelligence, and Web Development.</p>
+            <p>Hi, I'm Satya, a passionate learner and Computer Science major at DePaul University. Driven by my fascination with technology and innovation, I'm particularly interested in the fields of RPA, Artificial Intelligence, and Web Development.</p>
             <span id="extra-text" style="display:none">
-                <p>My enthusiasm for these areas of interest has led me to complete various projects and take on
-                    relevant coursework to expand my knowledge and skillset. I believe that keeping up-to-date with the
-                    latest advancements in technology is key to staying ahead of the curve in today's rapidly changing
-                    tech landscape.</p>
-                <p>When I'm not studying or working on projects, I enjoy reading and working out. I believe that having
-                    a well-balanced lifestyle is crucial to maintaining motivation and creativity in both personal and
-                    professional pursuits.</p>
-                <p>Thanks for taking the time to learn a bit more about me, and I look forward to sharing my work with
-                    you!</p>
+                <p>My enthusiasm for these areas has led me to complete various projects and take relevant coursework to expand my knowledge and skillset. I believe that staying up-to-date with the latest advancements in technology is crucial for success in today's rapidly evolving tech landscape.</p>
+                <p>In addition to my studies and professional pursuits, I enjoy reading and working out. I believe that maintaining a well-balanced lifestyle is essential for maintaining motivation and creativity.</p>
+                <p>Thank you for taking the time to learn more about me. I'm excited to share my work with you!</p>
             </span>
-            <button id="toggle-btn" onclick="toggleExtra()" class="btn">Read More</button>
+            <button id="toggle-btn" onclick="toggleExtraContent()" class="btn">Read More</button>
         </div>
     </section>
 
@@ -134,7 +126,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section class="skills" id="skills">
      <h2 class="heading">My <span>Skills</span></h2>
       <div class="skill-categories">
             <ul class="skills-list">
@@ -212,7 +204,7 @@
             </div>
 
             <div class="portfolio-box">
-                <img src="Portfolio/images/springboot.jpg" alt="">
+                <img src="Portfolio/images/springboot.jpg" alt="">    
                 <div class="portfolio-layer">
                     <h4>Work Management App</h4>
                     <p>Implemented a Spring Boot Application which can manage work tasks.</p>
@@ -231,8 +223,24 @@
                     <a href="https://github.com/Satya-22/WalkingTour" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
+
+        <span id="extra-projects" style="display:inline">
+            <div class="portfolio-box hidden">
+                <div class="portfolio-image-container">
+                  <img id="image" src="Portfolio/images/spring-data-jpa-with-hibernate.jpeg" alt="">
+                </div>
+                <div class="portfolio-layer">
+                    <h4>Employee Management</h4>
+                    <p>Implemented a Spring Boot Application which can Manage Employees.</p>
+                    <a href="https://github.com/Satya-22/Employee-Management-Application"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </span>
         </div>
-    </section>
+        <div class="center-allign">
+            <button id="toggle-more-btn" onclick="toggleExtra()" class="btn">Read More</button>    
+        </div> 
+        </section>
 
 
     <!-- Contact Section Design -->

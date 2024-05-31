@@ -159,7 +159,14 @@ span {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
-    cursor: pointer;
+    cursor: pointer;    
+}
+
+.center-allign {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:25vh;
 }
 
 .btn:hover {
@@ -239,7 +246,7 @@ span {
 }
 
 .portfolio {
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .portfolio h2 {
@@ -366,7 +373,10 @@ span {
   margin-right: 1rem; /* Add some space between icon and skill text */
   font-size: 1.2rem;  /* Adjust icon size */
   color: #070000;        /* Set icon color */
-  
+}
+
+.skills{
+    background-color: var(--second-bg-color)
 }
 
 .skill-categories{
@@ -506,6 +516,7 @@ img {
 
     .portfolio {
         padding-bottom: 7rem;
+        background-color: var(--bg-color);
     }
 
     .contact {

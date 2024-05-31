@@ -38,7 +38,7 @@ window.onscroll = () => {
 };
 
 //read more button onclick
-function toggleExtra() {
+function toggleExtraContent() {
   var extraText = document.getElementById("extra-text");
   var btn = document.getElementById("toggle-btn");
   if (extraText.style.display === "none") {
@@ -78,3 +78,21 @@ const typed = new Typed(".multiple-text", {
 $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
+
+function toggleExtra() {
+  const extraProjects = document.getElementById("extra-projects");
+  const toggleBtn = document.getElementById("toggle-more-btn");
+  const imageBox = extraProjects.querySelector(".portfolio-box.hidden.image");
+
+  if (extraProjects.style.display === "none") {
+    extraProjects.style.display = "flex";
+    toggleBtn.innerHTML = "Show Less";
+  } else if (imageBox) {
+    // Image is currently hidden within the extra projects
+    imageBox.classList.remove("hidden");
+    toggleBtn.innerHTML = "Show Less";
+  } else {
+    extraProjects.style.display = "none";
+    toggleBtn.innerHTML = "Read More";
+  }
+}
