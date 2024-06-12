@@ -96,3 +96,7 @@ function toggleExtra() {
     toggleBtn.innerHTML = "Read More";
   }
 }
+
+  function redirectToHome() {
+    window.location.href = "#home";
+  }

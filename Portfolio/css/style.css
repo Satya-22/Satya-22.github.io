@@ -494,6 +494,92 @@ img {
     color: var(--second-bg-color);
 }
 
+.skill {
+    display: 1 1 18%;
+    margin: 1%;
+    max-width: 18%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-icons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
+    margin: 21px;
+}
+.go-home-btn white-bg {
+    background-color: #fff;
+    color: var(--main-color);
+}
+.go-home-btn img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.home-icon{
+    width: 40px;
+}
+
+.button {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    cursor: default;
+}
+
+.go-home-btn {
+    right: 28px;
+    bottom: 28px;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-style: none;
+    border-radius: 30px;
+    object-fit: contain;
+    box-shadow: 0 4px 31px rgba(0, 0, 0, .15);
+}
+
+.skill-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px 20%;
+}
+.skill img {
+    max-width: 100%;
+    height: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.skill>img {
+    width: 108px;
+    height: 107px;
+    object-fit: contain;
+    -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
+    margin-bottom: 15px;
+}
+
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
     html {
