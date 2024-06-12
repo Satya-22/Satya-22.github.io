@@ -392,6 +392,9 @@ span {
     background-color: var(--second-bg-color)
 }
 
+.skill{
+    background-color: var(--second-bg-color);
+}
 .skill-categories{
     padding-top: 30px;
 }
