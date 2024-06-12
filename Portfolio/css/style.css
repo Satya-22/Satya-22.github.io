@@ -229,20 +229,33 @@ span {
 .services-container .services-box:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
+    transform: translateY(-10px);
 }
 
 .services-box i {
-    font-size: 7rem;
+    font-size: 6rem;
     color: var(--main-color);
+    margin-bottom: 5rem;
 }
 
 .services-box h3 {
     font-size: 2.6rem;
 }
 
-.services-box p {
+/* .services-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+} */
+
+.services-box p {
+    height: 200px; /* Adjust the height as needed */
+    overflow: hidden; /* Ensures content that overflows is hidden */
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin: 1rem 0 3rem; /* Optional: remove any default margin */
 }
 
 .portfolio {
@@ -515,11 +528,7 @@ img {
     align-items: center;
 }
 
-.social-icon {
-    -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
-    margin: 21px;
-}
+
 .go-home-btn white-bg {
     background-color: #fff;
     color: var(--main-color);
