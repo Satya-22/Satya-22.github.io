@@ -486,6 +486,18 @@ img {
     padding: 2rem 9%;
     background: var(--second-bg-color);
 }
+#footer .social {
+    margin: 0.9rem 0;
+}
+#footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    min-height: 160px;
+    text-align: center;
+}
 
 .footer-text p {
     font-size: 1.6rem;
@@ -508,6 +520,21 @@ img {
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--second-bg-color);
+}
+
+.social-icon img {
+    width: 30px;
+    height:30px;
+}
+
+.footer-section a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-section a:hover {
+    color: #3498db;
 }
 
 .skill {
@@ -543,6 +570,10 @@ img {
 
 .home-icon{
     width: 40px;
+}
+
+.social-icon{
+    margin: 0 105px;
 }
 
 .button {
