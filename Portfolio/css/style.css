@@ -447,6 +447,10 @@ img {
     padding: 5px; 
 }
 
+.hidden{
+    display: none;
+}
+
 .home-img {
     margin-left: 40px;
 }
