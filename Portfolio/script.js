@@ -74,7 +74,7 @@ ScrollReveal().reveal(".experience .col-md-6", {
 });
 
 const typed = new Typed(".multiple-text", {
-  strings: ["Computer Science Student","Software Engineer","RPA Developer"],
+  strings: ["Computer Science Student", "Software Engineer", "RPA Developer"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
@@ -103,6 +103,6 @@ $(document).ready(function () {
   $("#sortable").disableSelection();
 });
 
-  function redirectToHome() {
-    window.location.href = "#home";
-  }
+function redirectToHome() {
+  window.location.href = "#home";
+}
