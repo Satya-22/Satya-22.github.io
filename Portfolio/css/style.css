@@ -51,6 +51,122 @@ section {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 
+/* Ensure the title is centered */
+/* .experience .heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center; /* Center the heading */
+    /* width: 100%; Ensure it spans the full width of the container */
+/* } */
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Ensure the cards are in a 2x2 grid */
+.row #sortable {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center the grid within the container */
+    gap: 20px; /* Add space between cards */
+}
+
+.col-md-6 {
+    flex: 0 0 40%; /* Ensures two items per row */
+    max-width: 40%;
+    box-sizing: border-box;
+    padding: 20px; /* Adjust padding as needed */
+    padding-left: 1px;
+    padding-bottom: 1px;
+}
+
+/* Add spacing below each card to create vertical gaps between rows */
+.col-md-6:nth-child(odd) {
+    margin-bottom: 10px; /* Adds space between rows */
+}
+
+.col-md-6:nth-child(even) {
+    margin-bottom: 10px; /* Ensures even cards also have spacing */
+}
+
+.card-sub {
+    /* background-color: var(--bg-color); */
+    padding: 25px;
+    margin: 10px;
+    /* border-radius: 4px; */
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+}
+
+.experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2rem; */
+    background-color: var(--second-bg-color);
+}
+.card-title {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Adjusting the padding to ensure no extra space pushes elements to the side */
+.padding {
+    padding: 0 !important; /* Remove additional padding */
+    margin: 0 auto; /* Center the content within the container */
+}
+
+.stretch-card>.card {
+    width: 100%;
+    min-width: 100%;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 991.98px) {
+    .padding {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .padding {
+        padding: 1rem;
+    }
+}
+
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+.experience h2 {
+    font-size: 3.6rem;
+    margin-bottom: 5rem;
+}
+.experience-content h2{
+    text-align: center;
+    line-height: 1.2;
+}
+.experience-content h3 {
+    font-size: 2.6rem;
+}
+
+.experience-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
 .logo {
     font-size: 2.5rem;
     color: var(--text-color);
@@ -259,7 +375,7 @@ span {
 }
 
 .portfolio {
-    background: var(--bg-color);
+    background: var(--second-bg-color);
 }
 
 .portfolio h2 {
@@ -389,11 +505,11 @@ span {
 }
 
 .skills{
-    background-color: var(--second-bg-color)
+    background-color: var(--main-bg-color)
 }
 
 .skill{
-    background-color: var(--second-bg-color);
+    background-color: var(--main-bg-color);
 }
 .skill-categories{
     padding-top: 30px;
@@ -618,7 +734,7 @@ img {
     overflow: clip;
 }
 
-.skill>img {
+.skill img {
     width: 108px;
     height: 107px;
     object-fit: contain;

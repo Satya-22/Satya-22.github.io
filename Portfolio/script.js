@@ -11,6 +11,11 @@ menuIcon.onclick = () => {
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
+// $(document).ready(function () {
+//   $("#sortable").sortable();
+//   $("#sortable").disableSelection();
+// });
+
 window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
@@ -65,6 +70,13 @@ ScrollReveal().reveal(
 );
 ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 ScrollReveal().reveal(".home-content p1, .about-content", { origin: "right" });
+ScrollReveal().reveal(".experience .col-md-6", {
+  origin: "bottom",
+  distance: "50px",
+  duration: 1000,
+  delay: 200,
+  reset: false,
+});
 
 // typed js
 const typed = new Typed(".multiple-text", {
@@ -93,6 +105,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // }
+
+$(document).ready(function () {
+  $("#sortable").sortable();
+  $("#sortable").disableSelection();
+});
 
   function redirectToHome() {
     window.location.href = "#home";
