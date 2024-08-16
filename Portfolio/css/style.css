@@ -47,124 +47,44 @@ section {
     z-index: 100;
 }
 
+.details h2 {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+}
+
 .header.sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 
-/* Ensure the title is centered */
-/* .experience .heading {
-    font-size: 2em;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-align: center; /* Center the heading */
-    /* width: 100%; Ensure it spans the full width of the container */
-/* } */
+.btn {
+    display: inline-block;
+    padding: 2rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    cursor: pointer;    
+}
+
+.center-allign {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:25vh;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
 
 .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-/* Ensure the cards are in a 2x2 grid */
-.row #sortable {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: center; /* Center the grid within the container */
-    gap: 20px; /* Add space between cards */
-}
-
-.col-md-6 {
-    flex: 0 0 40%; /* Ensures two items per row */
-    max-width: 40%;
-    box-sizing: border-box;
-    padding: 20px; /* Adjust padding as needed */
-    padding-left: 1px;
-    padding-bottom: 1px;
-}
-
-/* Add spacing below each card to create vertical gaps between rows */
-.col-md-6:nth-child(odd) {
-    margin-bottom: 10px; /* Adds space between rows */
-}
-
-.col-md-6:nth-child(even) {
-    margin-bottom: 10px; /* Ensures even cards also have spacing */
-}
-
-.card-sub {
-    /* background-color: var(--bg-color); */
-    padding: 25px;
-    margin: 10px;
-    /* border-radius: 4px; */
-    overflow: hidden;
-    text-align: center;
-    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-}
-
-.experience{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* gap: 2rem; */
-    background-color: var(--second-bg-color);
-}
-.card-title {
-    margin: 10px 0;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.card-text {
-    font-size: 14px;
-    color: #666;
-}
-
-/* Adjusting the padding to ensure no extra space pushes elements to the side */
-.padding {
-    padding: 0 !important; /* Remove additional padding */
-    margin: 0 auto; /* Center the content within the container */
-}
-
-.stretch-card>.card {
-    width: 100%;
-    min-width: 100%;
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 991.98px) {
-    .padding {
-        padding: 1.5rem;
-    }
-}
-
-@media (max-width: 767.98px) {
-    .padding {
-        padding: 1rem;
-    }
-}
-
-.experience {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    background: var(--second-bg-color);
-}
-.experience h2 {
-    font-size: 3.6rem;
-    margin-bottom: 5rem;
-}
-.experience-content h2{
-    text-align: center;
-    line-height: 1.2;
-}
-.experience-content h3 {
-    font-size: 2.6rem;
-}
-
-.experience-content p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
 }
 
 .logo {
@@ -264,31 +184,6 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
-.btn {
-    display: inline-block;
-    padding: 2rem 2.8rem;
-    background: var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
-    font-size: 1.6rem;
-    color: var(--second-bg-color);
-    letter-spacing: .1rem;
-    font-weight: 600;
-    transition: .5s ease;
-    cursor: pointer;    
-}
-
-.center-allign {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:25vh;
-}
-
-.btn:hover {
-    box-shadow: none;
-}
-
 .about {
     display: flex;
     justify-content: center;
@@ -358,11 +253,6 @@ span {
     font-size: 2.6rem;
 }
 
-/* .services-box p {
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
-} */
-
 .services-box p {
     height: 200px; /* Adjust the height as needed */
     overflow: hidden; /* Ensures content that overflows is hidden */
@@ -372,6 +262,94 @@ span {
     justify-content: center;
     text-align: justify;
     margin: 1rem 0 3rem; /* Optional: remove any default margin */
+}
+
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+.experience h2 {
+    font-size: 3.6rem;
+    margin-bottom: 5rem;
+}
+.experience-content h2{
+    text-align: center;
+    line-height: 1.2;
+}
+.experience-content h3 {
+    font-size: 2.6rem;
+}
+
+.experience-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.row #sortable {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center the grid within the container */
+    gap: 20px; /* Add space between cards */
+}
+
+.col-md-6 {
+    flex: 0 0 40%; /* Ensures two items per row */
+    max-width: 40%;
+    box-sizing: border-box;
+    padding: 20px; /* Adjust padding as needed */
+    padding-left: 1px;
+    padding-bottom: 1px;
+}
+
+/* Add spacing below each card to create vertical gaps between rows */
+.col-md-6:nth-child(odd) {
+    margin-bottom: 10px; /* Adds space between rows */
+}
+
+.col-md-6:nth-child(even) {
+    margin-bottom: 10px; /* Ensures even cards also have spacing */
+}
+
+.card-sub {
+    /* background-color: var(--bg-color); */
+    padding: 25px;
+    margin: 10px;
+    /* border-radius: 4px; */
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+}
+
+.experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2rem; */
+    background-color: var(--second-bg-color);
+}
+.card-title {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Adjusting the padding to ensure no extra space pushes elements to the side */
+.padding {
+    padding: 0 !important; /* Remove additional padding */
+    margin: 0 auto; /* Center the content within the container */
+}
+
+.stretch-card>.card {
+    width: 100%;
+    min-width: 100%;
 }
 
 .portfolio {
@@ -447,18 +425,88 @@ span {
     border-radius: 50%;
 }
 
+.portfolio-image-container {
+    background-color: white;
+    padding: 5px; 
+}
+
 .portfolio-layer a i {
     font-size: 2rem;
     color: var(--second-bg-color)
 }
 
-.contact h2 {
-    margin-bottom: 3rem;
+.skill {
+    display: 1 1 18%;
+    margin: 1%;
+    max-width: 18%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.details h2 {
-    font-size: 3.6rem;
-    margin-bottom: 2rem;
+.skill-categories li i {
+  margin-right: 1rem; /* Add some space between icon and skill text */
+  font-size: 1.2rem;  /* Adjust icon size */
+  color: #070000;        /* Set icon color */
+}
+
+.skills{
+    background-color: var(--main-bg-color)
+}
+
+.skill{
+    background-color: var(--main-bg-color);
+}
+.skill-categories{
+    padding-top: 30px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+.skills-list li {
+    margin: 1rem; /* Add some space between skills */
+}
+
+.skills-list li img{
+    width: 75px;
+    height: 75px;
+}
+
+.skill-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px 20%;
+}
+.skill img {
+    max-width: 100%;
+    height: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.skill img {
+    width: 108px;
+    height: 107px;
+    object-fit: contain;
+    -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
+    margin-bottom: 15px;
+}
+
+.contact h2 {
+    margin-bottom: 3rem;
 }
 
 .contact .details h3 {
@@ -498,25 +546,12 @@ span {
     margin: .7rem 0;
 }
 
-.skill-categories li i {
-  margin-right: 1rem; /* Add some space between icon and skill text */
-  font-size: 1.2rem;  /* Adjust icon size */
-  color: #070000;        /* Set icon color */
-}
-
-.skills{
-    background-color: var(--main-bg-color)
-}
-
-.skill{
-    background-color: var(--main-bg-color);
-}
-.skill-categories{
-    padding-top: 30px;
-}
-
 .contact form .input-box input {
     width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
 }
 
 img {
@@ -536,31 +571,6 @@ img {
 
 .dev-icons {
   font-size: 3rem;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    list-style: none; /* Remove default bullets */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-  }
-
-.skills-list li {
-    margin: 1rem; /* Add some space between skills */
-}
-
-.skills-list li img{
-    width: 75px;
-    height: 75px;
-}
-.contact form textarea {
-    resize: none;
-}
-
-.portfolio-image-container {
-    background-color: white;
-    padding: 5px; 
 }
 
 .hidden{
@@ -657,19 +667,6 @@ img {
     color: #3498db;
 }
 
-.skill {
-    display: 1 1 18%;
-    margin: 1%;
-    max-width: 18%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 150px;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
 .social-icons-container {
     display: flex;
     flex-direction: row;
@@ -677,7 +674,6 @@ img {
     justify-content: center;
     align-items: center;
 }
-
 
 .go-home-btn white-bg {
     background-color: #fff;
@@ -720,30 +716,21 @@ img {
     box-shadow: 0 4px 31px rgba(0, 0, 0, .15);
 }
 
-.skill-card-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 80px 20%;
-}
-.skill img {
-    max-width: 100%;
-    height: auto;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-
-.skill img {
-    width: 108px;
-    height: 107px;
-    object-fit: contain;
-    -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
-    margin-bottom: 15px;
-}
-
 /* BREAKPOINTS */
+
+/* Media Queries for responsiveness */
+@media (max-width: 991.98px) {
+    .padding {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .padding {
+        padding: 1rem;
+    }
+}
+
 @media (max-width: 1200px) {
     html {
         font-size: 55%;

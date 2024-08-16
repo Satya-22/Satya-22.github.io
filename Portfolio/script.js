@@ -11,11 +11,6 @@ menuIcon.onclick = () => {
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("header nav a");
 
-// $(document).ready(function () {
-//   $("#sortable").sortable();
-//   $("#sortable").disableSelection();
-// });
-
 window.onscroll = () => {
   sections.forEach((sec) => {
     let top = window.scrollY;
@@ -78,7 +73,6 @@ ScrollReveal().reveal(".experience .col-md-6", {
   reset: false,
 });
 
-// typed js
 const typed = new Typed(".multiple-text", {
   strings: ["Computer Science Student","Software Engineer","RPA Developer"],
   typeSpeed: 100,
@@ -103,8 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
       : "Show Less";
   });
 });
-
-// }
 
 $(document).ready(function () {
   $("#sortable").sortable();
